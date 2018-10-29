@@ -220,7 +220,7 @@ public class Util {
 	private static List<String[]> extractData(PDDocument pdfDocument, List tables, Layout layout)
 			throws Exception {
 		System.out.println("*************************LOADING CHUNKS FROM DOCUMENT*************************");
-		LayoutExtractor layoutExtractor = new LapdfExtractStrategy();
+		LayoutExtractor layoutExtractor = (LayoutExtractor) Class.forName("com.pdfextract.common.LapdfExtractStrategy").newInstance();
 		val layoutSections = layoutExtractor.extractData(pdfDocument, layout);
 		layoutSections.forEach(chunk -> {
 			System.out.println(chunk);
