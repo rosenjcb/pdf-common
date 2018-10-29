@@ -23,7 +23,6 @@ import org.json.simple.parser.ParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.pdfextract.common.ExtractStrategy;
-import com.pdfextract.common.LapdfExtractStrategy;
 import com.pdfextract.common.Layout;
 import com.pdfextract.common.LayoutExtractor;
 import com.pdfextract.common.LayoutExtractorDetails;
